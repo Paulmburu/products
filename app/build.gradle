@@ -119,6 +119,18 @@ dependencies {
 
     implementation("androidx.room:room-paging:2.5.2")
 
+    // Security
+    implementation ("androidx.security:security-crypto:1.0.0")
+    // Sqlcipher
+    implementation ("net.zetetic:android-database-sqlcipher:4.5.0")
+
+    // MockK for unit tests
+    testImplementation("io.mockk:mockk:1.13.7")
+    // MockK for instrumentation tests
+    androidTestImplementation("io.mockk:mockk-android:1.13.7")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
+
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
