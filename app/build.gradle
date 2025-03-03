@@ -3,7 +3,6 @@ plugins {
     id 'com.google.dagger.hilt.android'
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'io.sentry.android.gradle'
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
     id 'kotlin-parcelize'
@@ -146,11 +145,3 @@ kapt {
     correctErrorTypes true
 }
 
-sentry {
-    org = "sicario"
-    projectName = "products"
-
-    // this will upload your source code to Sentry to show it as part of the stack traces
-    // disable if you don't want to expose your sources
-    includeSourceContext = true
-}
